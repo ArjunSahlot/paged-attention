@@ -47,7 +47,7 @@ void attention_cpu(const float* q, const float* k, const float* v, float* out, i
         // update out[h]
         for (int t = 0; t < seq_len; t++) {
             for (int d = 0; d < head_dim; d++) {
-                out[h][d] += scores[t] * v[(t*num_heads + h)*head_dim + d];
+                out[h * head_dim + d] += scores[t] * v[(t*num_heads + h)*head_dim + d];
             }
         }
     }
