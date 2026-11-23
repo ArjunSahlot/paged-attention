@@ -27,7 +27,7 @@ ECE 759 final project. rebuilding PagedAttention (the vllm memory trick) from sc
 
 ## checklist
 
-- [ ] 1. cpu attention for 1 token (subtract max before exp!) + 2 sanity tests
+- [x] 1. cpu attention
 - [ ] 2. gpu attention, naive kv
 - [ ] 3. block manager + randomized tests
 - [ ] 4. paged attention kernel, matches cpu ← proposal core done here
