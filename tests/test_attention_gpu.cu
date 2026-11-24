@@ -1,5 +1,5 @@
 // Checks attention_gpu against attention_cpu on a batch of requests with different lengths.
-#include "attention_cpu.h"
+#include "attention_cpu.hpp"
 #include "attention_gpu.hpp"
 
 #include <cmath>

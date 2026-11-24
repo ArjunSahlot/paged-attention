@@ -1,4 +1,4 @@
-#include "attention_cpu.h"
+#include "attention_cpu.hpp"
 
 #include <cmath>
 #include <algorithm>
